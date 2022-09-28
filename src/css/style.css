@@ -1,3 +1,7 @@
+/* kan använda css reset */
+
+/* min start */
+
 *{
     font-family: 'Poppins', sans-serif; 
 }
@@ -5,6 +9,7 @@
 h1, h2, h3, h4, h5, h6{
    text-transform: uppercase;
    font-family: 'Barlow Semi Condensed', sans-serif;
+   color: #B78649;
 }
 
 p{
@@ -21,15 +26,16 @@ h1{
     /* flexa istället?? */
     color: rgb(255, 255, 255);
     font-family: 'Barlow Semi Condensed';
-    margin-top: 30px;
     margin-left: 10px;
+    font-size: 28px;
+   
 }
 
 body {
     margin: 0;
 }
 
-/* main navbar */
+/* MAIN NAVBAR */
 
 .navbar{
     height: 35px;
@@ -48,23 +54,19 @@ a{
 }
 
 /* Dropdown Button */
-.dropdown-btn{
+.dropdown-btn {
     color: rgb(255, 255, 255);
     text-transform: uppercase;
-    padding: 14px;
-    font-size: 12px;
+    margin-right: 20px;
+    font-size: 20px;
     border: none;
     position: absolute;
     top: 0;
     right: 0;
-    padding: 10px;
-    margin: 10px;
     display: inline-block;
 }
 /* The container <div> - needed to position the dropdown content */
 .dropdown-content{
-    position: inherit;
-    display: inline-block;
     top: 0;
     right: 0;
   }
@@ -76,7 +78,8 @@ a{
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 1000;
+  
   }
   
   /* Links inside the dropdown */
@@ -86,9 +89,10 @@ a{
     text-decoration: none;
     display: block;
   }
+
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown-content a:hover {background-color: #B78649;}
   
   /* Show the dropdown menu on hover */
   .dropdown-menu:hover .dropdown-content {display: block;}
@@ -98,7 +102,102 @@ a{
 
 
 
+/* HEADER-PIC */
 
+.header-div{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('../assets/header-pic.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+/* HEADER-TEXT */
+
+.header-text{
+    position: absolute;
+    top: 30vh;
+    margin: 20px;
+}
+
+.welcome{
+    margin-bottom: 0;
+    font-weight: 100;
+}
+
+.dream-style-header{
+    font-weight: 1000;
+    font-size: 35px;
+    color: rgb(235 232 222);
+    margin-top: 0px;
+    
+}
+
+.your-style{
+    text-decoration: none;
+
+}
+
+.header-info{
+    color: rgb(235 232 222);
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+/* SERVICES-BOXES */
+
+h3{
+    color: rgb(235 232 222);
+    font-family: 'Poppins', sans-serif; 
+
+}
+
+.services > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    font-weight: 600;
+}
+
+.box1, .box3{
+    background-color: rgb(191, 146, 91);
+    color: rgb(235 232 222);
+    
+}
+
+.box2, .box4{
+    background-color: rgb(183, 134, 73);
+    color: rgb(235 232 222);    
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+}
+
+.services > div > img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-top: -60px;
+    z-index: 10;
+}
+
+
+
+
+
+
+
+
+
+
+/* ----------------------- */
 
 @media screen and (min-width: 800px){
     
