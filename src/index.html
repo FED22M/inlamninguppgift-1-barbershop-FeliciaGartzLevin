@@ -25,7 +25,7 @@
                     
                         <button id="menu-button"><btn class="class-btn">Menu</btn></button>
                         <div class="menu">
-                            <ul>
+                            <ul class="drop-menu">
                                 <li class="a-menu"><a class="a-menu" href="#">Home</a></li>
                                 <li class="a-menu"><a class="a-menu" href="#">About</a></li>
                                 <li class="a-menu"><a class="a-menu" href="#">Pricing</a></li>
@@ -108,7 +108,7 @@
             <h2>Testimonials</h2>
             <h3 class="testimonials-about">People say <br> about our barbers</h3>
 
-<!-- använda float i dessa boxarna? för text bredvid bild? Behöver någon slags karusell också i mobile för att swipea mellan -->
+            <!-- fixa carousel till dessa cards -->
 
             <div class="card a">
                 <div class="quotation-marks">
@@ -224,10 +224,12 @@
     </footer>
 
 </body>
-<script>
+<!-- DROPDOWN MENU SCRIPT -->
+    <script>
     const menuBtn = document.querySelector('#menu-button');
     menuBtn.addEventListener('click', () => {
         menuBtn.classList.toggle('menu-open');
     });
     </script>
+
 </html>
