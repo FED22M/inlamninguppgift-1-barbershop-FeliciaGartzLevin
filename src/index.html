@@ -12,7 +12,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@800&family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;400;500;600;800&family=Poppins:wght@200;400;500;600;800&display=swap" rel="stylesheet">
     </head>
 <body>
 
@@ -22,20 +22,19 @@
                 <div class="navbar">
                     <h1>Barbershop</h1>
 
-                <div class="dropdown-menu">
-                    <btn class="dropdown-btn">Menu</btn>
-                    <div class="dropdown-content">
-                        <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Pricing</a></li>
-                            <li><a href="">Gallery</a></li>
-                            <li><a href="">Team</a></li>
-                            <li><a href="">Blog</a></li>
-                            <li><a href="">Contact</a></li>
-                        </ul>
-                    </div>        
-                </div>
+                    
+                        <button id="menu-button"><btn class="class-btn">Menu</btn></button>
+                        <div class="menu">
+                            <ul>
+                                <li class="a-menu"><a class="a-menu" href="#">Home</a></li>
+                                <li><a class="a-menu" href="#">About</a></li>
+                                <li><a class="a-menu" href="#">Pricing</a></li>
+                                <li><a class="a-menu" href="#">Gallery</a></li>
+                                <li><a class="a-menu" href="#">Team</a></li>
+                                <li><a class="a-menu" href="#">Blog</a></li>
+                                <li><a class="a-menu" href="#">Contact</a></li>
+                            </ul>
+                        </div>
                 </div> 
             </nav>
       
@@ -225,4 +224,10 @@
     </footer>
 
 </body>
+<script>
+    const menuBtn = document.querySelector('#menu-button');
+    menuBtn.addEventListener('click', () => {
+        menuBtn.classList.toggle('menu-open');
+    });
+    </script>
 </html>
