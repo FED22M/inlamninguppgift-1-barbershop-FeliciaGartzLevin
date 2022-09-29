@@ -29,7 +29,6 @@ h1{
     font-size: 28px;
     padding: 0;
     margin-top: 3px;
-   
 }
 
 body {
@@ -68,15 +67,31 @@ a{
     justify-content: space-between;
 }
 
-Dropdown Button
-.class-button{
-    color: rgb(255, 255, 255);
-    background-color: none;
-    width: 30px;
+/* Dropdown Button */
+
+#menu-button{
     text-transform: uppercase;
     font-size: 20px;
     border: none;
+    background-color: rgb( 20 27 37);
+    box-sizing: border-box;
+    text-decoration:none;
+    padding-right: 35px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Poppins', sans-serif; 
+    }
+
+#menu-button:hover{
+    color: rgb(191 146 91);
 }
+
+li.a-menu{
+    padding: 5px;
+}
+
+/* dropdown function */
 
 button + .menu {
     display: none;
@@ -101,6 +116,7 @@ button + .menu {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1000;
+    text-align: center;
   }
   
 
@@ -131,7 +147,7 @@ button + .menu {
 
 .header-text{
     position: absolute;
-    top: 30vh;
+    top: 40vh;
     margin: 20px;
 }
 
@@ -140,7 +156,6 @@ button + .menu {
 }
 
 .dream-style-header{
-    font-weight: 1000;
     font-size: 35px;
     color: rgb(235 232 222);
     margin-top: 0px;
@@ -155,15 +170,40 @@ button + .menu {
 
 .header-info{
     color: rgb(235 232 222);
-    font-weight: 800;
     margin-bottom: 30px;
 }
 
+/* LEARN BUTTON */
+
+.learn{
+        text-transform: uppercase;
+        display:inline-block;
+        padding:0.35em 1.2em;
+        border: 2px solid #B78649;
+        margin:0 0.3em 0.3em 0;
+        border-radius:0.12em;
+        box-sizing: border-box;
+        text-decoration:none;
+        font-family: 'Poppins', sans-serif; 
+        font-weight:400;
+        font-size: 16px;
+        color:#B78649;
+        text-align:center;
+        transition: all 0.2s;
+        background-color: transparent;
+    }
+        
+button.learn:hover{
+    color:#B78649;
+    background-color:#FFFFFF;
+        }
+
 /* SERVICES-BOXES */
 
-.services > div > h3{
-    color: rgb(235 232 222);
-    font-family: 'Poppins', sans-serif; 
+h3.h-services{
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
 
 }
 
@@ -206,6 +246,32 @@ button + .menu {
     margin-top: -120px;
     z-index: 10;
 }
+
+.name-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name-text > *{
+    margin: 5px;
+    font-family: 'Poppins', sans-serif; 
+
+}
+
+.name-text > span{
+    color: #B78649;
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.name-text > h4{
+    text-transform: none;
+    color: black;
+    font-size: 20px;
+}
+
 
 /* ABOUT-SECTION */
 
