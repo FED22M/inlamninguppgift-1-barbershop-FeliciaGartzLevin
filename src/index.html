@@ -23,7 +23,7 @@
                     <h1>Barbershop</h1>
 
                     
-                        <button id="menu-button"><btn class="class-btn">Menu</btn></button>
+                        <button id="menu-button" class="menu-button">Menu</button>
                         <div class="menu">
                             <ul class="drop-menu">
                                 <li class="a-menu"><a class="a-menu" href="#">Home</a></li>
@@ -40,13 +40,21 @@
       
         
             <div>
-                <div class="header-text"> 
-                    <h2 class="welcome">Welcome to Barbershop</h2>
-                    <h2 class="dream-style-header">We will make <span class="your-style">your style</span> of your dreams</h2>
-                    <div class="header-info">A small river named Duden flows by their place
-                        Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy.
+                <div class="header-text">
+                    <div class="maintext1">
+                        <h2 class="welcome">Welcome to Barbershop</h2>
+                    </div> 
+                    <div class="maintext2">
+                        <h2 class="dream-style-header">We will make <span class="your-style">your <br>style</span> of your dreams</h2>
                     </div>
-                    <button class="learn">Learn more about us</button>
+                    <div class="maintext3">
+                        <div class="header-info">A small river named Duden flows by their place
+                            Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy.
+                        </div>
+                        <div>
+                            <button class="learn">Learn more about us</button>    
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -85,45 +93,49 @@
         </section>
 
         <section class="about">
-            <img src="assets/saloon.png" alt="man cutting hair in a barbershop">
-            <h2>About barber</h2>
-            <h3>A smooth barber experience in your town</h3>
-            <p>A small river named Duden flows by their place
-                Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy.
-                The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word “and” and the Little Blind Text should turn around and return to its own, safe country.
-                A small river named Duden flows by their place
-                Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy.
-            </p>
-
-            <div class="experience">
-                <img src="assets/calendar-icon.jpg" alt="calendar icon" class="calendar-icon">
-                <div class="twenty-yrs-exp">
-                    <span class="twenty">20</span>
-                    <span class="yrs-exp">years of <br> experience</span>
-                </div> 
-            </div>
+            <img class="about-img" src="assets/saloon.png" alt="man cutting hair in a barbershop">
+            <div class="about-text">
+                <h2 class="about-h2">About barber</h2>
+                <h3 class="about-h3">A smooth barber <br>experience in your town</h3>
+                <p class="about-p">A small river named Duden flows by their place
+                    Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy.
+                    The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word “and” and the Little Blind Text should turn around and return to its own, safe country.
+                    A small river named Duden flows by their place
+                    Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy.
+                </p>
+    
+                <div class="experience">
+                    <img src="assets/calendar-icon.jpg" alt="calendar icon" class="calendar-icon">
+                    <div class="twenty-yrs-exp">
+                        <span class="twenty">20</span>
+                        <span class="yrs-exp">years of <br> experience</span>
+                    </div> 
+                </div>
+            </div>   
         </section>
 
         <section class="testimonials">
-            <h2>Testimonials</h2>
-            <h3 class="testimonials-about">People say <br> about our barbers</h3>
-
+            <div class="testimonials-header">
+                <h2 class="testimonials-h2">Testimonials</h2>
+                <h3 class="testimonials-about">People say <br> about our barbers</h3>
+            </div>
+         
             <!-- fixa carousel till dessa cards -->
 
-            <div class="card a">
+            <div class="card-a">
                 <div class="quotation-marks">
                     <i class="fa-solid fa-quote-left"></i>
                 </div>
 
-                <div class="text a">
-                    <p>A small river named Duden flows by their place
+                <div class="text-a">
+                    <p class="testimonials-p">A small river named Duden flows by their place
                     Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy.
                 </p>
                 </div>
 
                 <div class="text-and-pic">
                     <div class="man">
-                        <img src="assets/man1.png" alt="bearded man in gray suit" class="cust-pic" />
+                        <img src="assets/man1.png" alt="bearded man customer" class="cust-pic" />
                     </div>
                     <div class="name-text">
                         <span>★★★★★</span> 
@@ -133,20 +145,20 @@
                 </div>
             </div>
 
-            <div class="card b">
+            <div class="card-b">
                 <div class="quotation-marks">
                     <i class="fa-solid fa-quote-left"></i>
                 </div>
 
-                <div class="text a">
-                    <p>A small river named Duden flows by their place
+                <div class="text-a">
+                    <p class="testimonials-p">A small river named Duden flows by their place
                     Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy.
                 </p>
                 </div>
 
                 <div class="text-and-pic">
                     <div class="man">
-                        <img src="assets/man2.png" alt="bearded man in gray suit" class="cust-pic" />
+                        <img src="assets/man2.png" alt="bearded man customer" class="cust-pic" />
                     </div>
                     <div class="name-text">
                         <span>★★★★★</span> 
@@ -156,19 +168,19 @@
                 </div>
             </div>
 
-            <div class="card c">
+            <div class="card-c">
                 <div class="quotation-marks">
                     <i class="fa-solid fa-quote-left"></i>
                 </div>
-                <div class="text a">
-                    <p>A small river named Duden flows by their place
+                <div class="text-a">
+                    <p class="testimonials-p">A small river named Duden flows by their place
                     Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy.
                 </p>
                 </div>
 
                 <div class="text-and-pic">
                     <div class="man">
-                        <img src="assets/man3.png" alt="bearded man in gray suit" class="cust-pic" />
+                        <img src="assets/man3.png" alt="bearded man customer" class="cust-pic" />
                     </div>
                     <div  class="name-text">
                         <span>★★★★★</span> 
@@ -181,7 +193,7 @@
     </main>
 
     <footer>
-        <div class="logos">
+        <div class="footer logos">
             <div class="twitter">
                 <i class="fa-brands fa-twitter"></i>
             </div>
@@ -193,33 +205,38 @@
             </div>
         </div>
 
-        <h4>Info</h4>
-
-        <ul class="contact">
-            <li><a href="">About</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Gallery</a></li>
-            <li><a href="">Blog</a></li>
-        </ul>
-
-        <h4>Explore</h4>
-
-        <ul class="contact">
-            <li><a href="">Join us</a></li>
-            <li><a href="">Book appointment</a></li>
-            <li><a href="">Privacy & policy</a></li>
-            <li><a href="">Terms & conditions</a></li>
-        </ul>
-
-        <h4>Any questions?</h4>
-        <div class="contact">
-            <i class="fa-solid fa-map"></i>
-            <a href="">203 Fake St. Mountain, San Fransisco, California, USA</a><br>
-            <i class="fa-solid fa-phone"></i>
-            <a href="tel:+(423) 508-8201">+(423) 508-8201</a><br>
-            <i class="fa-solid fa-paper-plane"></i>
-            <a type href="mailto:">info@yourdomain.com</a>    
+        <div class="footer footer-info">
+            <h4>Info</h4>
+            <ul class="contact">
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
         </div>
+        
+        <div class="footer footer-explore">
+            <h4>Explore</h4>
+            <ul class="contact">
+                <li><a href="">Join us</a></li>
+                <li><a href="">Book appointment</a></li>
+                <li><a href="">Privacy & policy</a></li>
+                <li><a href="">Terms & conditions</a></li>
+            </ul>
+        </div>
+     
+        <div class="footer footer-questions">
+            <h4>Any questions?</h4>
+            <div class="contact">
+                <i class="fa-solid fa-map"></i>
+                <a href="">203 Fake St. Mountain, San Fransisco, California, USA</a><br>
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+(423) 508-8201">+(423) 508-8201</a><br>
+                <i class="fa-solid fa-paper-plane"></i>
+                <a type href="mailto:">info@yourdomain.com</a>    
+            </div>
+        </div>
+        
        
     </footer>
 
