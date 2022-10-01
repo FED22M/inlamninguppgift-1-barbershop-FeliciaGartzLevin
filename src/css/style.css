@@ -20,10 +20,6 @@ h1, h2, h3, h4, h5, h6{
    color: var(--dark-gold);
 }
 
-p{
-    font-family: 'Poppins', sans-serif; 
-
-}
 
 a{
     color: white;
@@ -33,7 +29,7 @@ h1{
     display: inline;
     color: white;
     font-family: 'Barlow Semi Condensed';
-    margin-left: 10px;
+    margin-left: 30px;
     font-size: 28px;
     padding: 0;
     margin-top: 3px;
@@ -54,26 +50,22 @@ a{
 
 /* MAIN NAVBAR */
 
+
+
 .navbar{
     height: 40px;
     background-color: var(--dark-color);
     opacity: 80%;
-}
-
-/* DROPDOWN MENU */
-
-.navbar{
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
-}
-
-.navbar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
+/* DROPDOWN MENU */
 
 /* Dropdown Button */
 
@@ -144,19 +136,6 @@ li.a-menu{
 
 @media screen and (min-width: 800px){
 
-/* 
-    #menu-button{
-        display: none;
-    } */
-
-    /* button.menu-open + .menu
-    Mikko menar att denna kod är mer specifik ovan och 
-    vägre tyngre och därför måste vara med här nere för att väga l
-    ika tungt för att menyraden ska synas utan att vara klickad*/
-/* 
-    funkar nu men 
-      vet inte varför #menu-button 
-    är hidden + jag vill flytta texten åt höger */
 
     .menu-button + .menu{
         display: flex;
@@ -169,10 +148,6 @@ li.a-menu{
         opacity: 1;
         visibility: visible;
     }
-
-    /* #menu-button{
-        display: none;
-    }  */
 
     li{
         display: inline-block;
@@ -195,8 +170,7 @@ li.a-menu{
 /* HEADER-PIC */
 
 .header-div{
-    /* gör bakgrundsbilden ännu mörkare */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('../assets/header-pic.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.75)) , url('../assets/header-pic.jpg');
     background-position: center;
     background-size: cover;
     position: relative;
@@ -209,7 +183,7 @@ li.a-menu{
 
 .header-text{
     position: absolute;
-    top: 40vh;
+    top: 25vh;
     margin: 20px;
     font-size: 12px;
     width: 450px;
@@ -220,14 +194,19 @@ li.a-menu{
 }
 
 .dream-style-header{
-    font-size: 35px;
+    font-size: 48px;
     color: rgb(235 232 222);
     margin-top: 0px;
-    
+    font-weight: 800;
+    letter-spacing: -2px;
 }
 
 .your-style{
+    font-family: 'Barlow Semi Condensed', sans-serif;
     text-decoration: none;
+    color: transparent;
+      -webkit-text-stroke-width: 0.5px;
+      -webkit-text-stroke-color: white;
     /* fixa genomskinlig text med 
     vit ram här */
 }
@@ -438,7 +417,6 @@ men försöker just nu bara få rätt på grid. */
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* floata denna till vänster i mediaqueries */
 }
 
 .about-h2{
@@ -493,32 +471,18 @@ men försöker just nu bara få rätt på grid. */
 }
 
 @media screen and (min-width: 922px){
-    /* floata about-img till vänster */
      .about-img{
         height: 100vh;
         width: auto;
+        margin-bottom: 0;
     }
-    /*
-
-    .about-p{
-       padding-right: 30%;
-    } 
-   
-    .experience{
-        width: 20%;
-    }
-
-    .about-h2{
-        margin-top: 40px;
-    } 
-    struntar i float*/
 
     .about{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding: 30px;
-        
+        margin-bottom: 0;
     }
 
     .experience{
@@ -529,7 +493,7 @@ men försöker just nu bara få rätt på grid. */
 
 @media screen and (min-width: 1000px){
     .about-text{
-        padding-top: 10%;
+        padding-top: 30px;
     }
 }
 
@@ -621,6 +585,11 @@ men försöker just nu bara få rätt på grid. */
 .text-and-pic{
     display: flex;
 }
+
+@media screen and (max-width: 799.9px){
+
+}
+
 @media screen and (min-width: 800px){
 
     .testimonials{
@@ -636,7 +605,6 @@ men försöker just nu bara få rätt på grid. */
 
 @media screen and (min-width: 1200px){
 
-    /* grida denna!! behövs kanske inte */
     .testimonials{
         display: grid;
         grid-template-columns: 0.3fr 1fr 1fr 1fr 0.3fr;
@@ -656,8 +624,6 @@ men försöker just nu bara få rätt på grid. */
 
 /* FOOTER */
 
-
-/* grida footern */
 
 footer{
     background-color: black;
@@ -730,7 +696,7 @@ ul.contact > li {
     padding-bottom: 50px;
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 620px){
 
     footer{
         display: grid;
@@ -748,11 +714,9 @@ ul.contact > li {
         align-items: flex-end;
     }
 
-    
-
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 860px){
 
     footer{
         display: grid;
@@ -775,6 +739,7 @@ ul.contact > li {
 footern: lägg till text i logos
 fixa YOUR STYLE texten högst upp
 fixa card- carousel (om tid)
+fixa about-bilden så att den är i linje med texten vid bredare bild.
 */
 
 
