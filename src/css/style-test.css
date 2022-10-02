@@ -501,11 +501,6 @@ men försöker just nu bara få rätt på grid. */
 
 /* TESTIMONIALS */
 
-/* fixa Roger Scott text 
-    fixa text position
-    fixa carousel
-*/
-
 .quotation-marks{
     height: 40px;
     width: 40px;
@@ -588,22 +583,119 @@ men försöker just nu bara få rätt på grid. */
     display: flex;
 }
 
-    /* CAROUSEL FOR TESTIMONIAL CARDS */
+.slideshow-container{
+    grid-area: slideshow-container;
+}
+
+    /* CAROUSEL FOR TESTIMONIAL CARDS
+    jag lyckas tyvärr inte disable javascripten och få 
+    in alla bilderna samtidigt på skärmen när skärmen blir bredare  */
 
     @media screen and (max-width: 799.9px){
+        
 
+.testimonials > *{
+    box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 749px;
+  position: relative;
+  margin: auto;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
         
 }
 
 @media screen and (min-width: 800px){
 
+    .mySlides{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .next, .prev{
+        display: none;
+        visibility: hidden;
+    }
+
     .testimonials{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.5fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
         grid-template-areas: 
-        "testimonials-header testimonials-header testimonials-header"
-        "card-a card-b card-c"
+        "testimonials-header"
+        "slideshow-container"
+    }
+
+    .slideshow-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "card-a card-b card-c";
+    
     }
 
 }
@@ -612,11 +704,11 @@ men försöker just nu bara få rätt på grid. */
 
     .testimonials{
         display: grid;
-        grid-template-columns: 0.3fr 1fr 1fr 1fr 0.3fr;
+        grid-template-columns: 0.3fr 1fr 0.3fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: 
-        ". testimonials-header testimonials-header testimonials-header ."
-        "... card-a card-b card-c ...";
+        ". testimonials-header ."
+        ". slideshow-container .";
         padding-bottom: 60px;
     } 
 
@@ -694,20 +786,12 @@ ul.contact > li {
     color: var(--light-gold);
     margin: 10px 10px 10px 5px;
 }
+/* alt lägg dessa som before */
 
 .contact{
     margin-left: 10px;
     padding-bottom: 50px;
 }
-/* 
-jag lyckas tyvärr inte dölja denna text för att sedan ta fram den i större format
-@media screen and (max-width: 619.9px){
-
-    .footer-barbershop, .footer-barbershop > *{
-        display: none;
-        visibility: hidden;
-    }
-} */
 
 @media screen and (min-width: 620px){
 
@@ -743,4 +827,20 @@ jag lyckas tyvärr inte dölja denna text för att sedan ta fram den i större f
     .logos{
         align-items: center;
     }
+}
+
+
+
+/* kvar att göra:
+
+footern: lägg till text i logos
+fixa card- carousel (om tid)
+*/
+
+
+/* -----------media queries------------ */
+
+@media screen and (min-width: 800px){
+
+
 }
